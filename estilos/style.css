@@ -41,6 +41,8 @@
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
         
         transform: translate(-50%, -50%);
+        transition: width 0.3s, height 0.3s;
+        transition-timing-function: ease;
     }
 
     section#login h1 {
@@ -51,7 +53,7 @@
 
     section#login p#introducao {
         margin: 20px;
-        text-align: justify;
+        text-align: center;
     }
 
     form > div.campo {
@@ -96,6 +98,7 @@
 
     form > input[type=submit]:hover {
         background-color: #348685;
+        cursor: pointer;
     }
 
     form > a#botao {
