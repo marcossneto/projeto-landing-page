@@ -23,7 +23,7 @@
     }
 
     body {
-        background-color: var(--cianoec);
+        background-color: #5BC0BE;
         width: 100vw;
         height: 100vh;
     }
@@ -37,6 +37,8 @@
         width: 400px;
         height: 650px;
         border-radius: 15px;
+
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
         
         transform: translate(-50%, -50%);
     }
