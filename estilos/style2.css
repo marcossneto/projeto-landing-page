@@ -1,1 +1,78 @@
 @charset "UTF-8";
+
+/* Mobile First */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font1: "Open Sans", sans-serif;
+}
+
+@media all {
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    body {
+        font-family: var(--font1);
+        background-color: #514F59;
+    }
+
+    header {
+        background-image: linear-gradient( #6D72C3, #422f80, #1D1128);
+        min-height: 190px;
+        color: white;
+        padding: 10px;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    header > h1 {
+        font-family: var(--font1);
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: 60px;
+        padding-top: 25px;
+    }
+
+    header > nav {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .menu {
+        display: inline;
+        color: white;
+        padding: 10px;
+        margin-right: 26px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .menu:hover {
+        background-color: #6D72C3;
+        border-radius: 5px;
+        padding: 10px;
+        transition-duration: 0.8s;
+    }
+
+    main {
+        background-color: white;
+        padding: 30px;
+        margin: auto;
+        text-align: justify;
+    }
+
+    main > h2 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-weight: 750;
+        font-size: 1.7em;
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.329);
+    }
+
+    main > ol {
+        list-style-type: '\2714\00A0\00A0'; 
+        margin: 20px;   
+    }
+}
