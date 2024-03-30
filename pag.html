@@ -13,11 +13,10 @@
             <a class="menu" href="#">Regras</a>
             <a class="menu" href="#">Notícias</a>
             <a class="menu" href="#">Curiosidades</a>
-            <a class="menu" href="#">Contato</a>
         </nav>
     </header>
     <main>
-        <h2>Regras</h2>
+        <h2 id="primeiroh2">Regras</h2>
         <p>
             <ol>
                 <li>A bola não pode quicar no chão;</li>
@@ -34,38 +33,45 @@
         <h2>Curiosidades</h2>
         <article>
             <p>
-                O Beach Tennis foi criado em meados de 1987, em Ravennana, na Itália. Sua profissionalização foi em 1996, o esporte começou a delimitar regras e práticas, que vêm se modificando até hoje. O esporte já alcançou todos os continentes, regido a nível internacional pela <a href="#">Federação Internacional de Tênis</a>.
+                O Beach Tennis foi criado em meados de 1987, em Ravennana, na Itália. Sua profissionalização foi em 1996, o esporte começou a delimitar regras e práticas, que vêm se modificando até hoje. O esporte já alcançou todos os continentes, regido a nível internacional pela <a href="#" class="link">Federação Internacional de Tênis</a>.
             </p>
             <p>
-                No Brasil, o Beach Tennis chegou em 2008, no estado do Rio de Janeiro, logo crescendo rapidamente para outras cidades. Hoje o esporte é bastante popular e vêm crescendo cada vez mais. Atualmente, a <a href="#">Confederação Brasileira de Tênis</a> é a entidade que regula o esporte no país.
+                No Brasil, o Beach Tennis chegou em 2008, no estado do Rio de Janeiro, logo crescendo rapidamente para outras cidades. Hoje o esporte é bastante popular e vêm crescendo cada vez mais. Atualmente, a <a href="#" class="link">Confederação Brasileira de Tênis</a> é a entidade que regula o esporte no país.
             </p>
         </article>
 
         <h2>Notícias</h2>
         <article>
-            <div class="imagem">FOTO</div>
+            <div class="imagem" id="imagem1">
+
+            </div>
             <aside>Foto: Istock Getty Images</aside>
-            <p>De acordo com a Confederação Brasileira de Beach Tennis (CBBT), a partir de 1º de Fevereiro deste ano, os jogadores da categoria Masculina Profissional serão obrigados a jogar com uma rede de 1,80m de altura, e o parceiro do sacador deverá estar a uma distância de 6 metros da rede.</p>
-            <p>Porém é importante ressaltar que essa regra só será aplicada nos torneios da CBBT e não afetará a CBT nem a ITF, que são responsáveis pela maioria dos torneios com transmissão.</p>
-            <aside>Fonte: https://escolatoss.com</aside>
+            <p>A mais nova regra do Beach Tennis, determinada pela Confedereção Brasileira de Beach Tennis (CBBT), consiste na seguinte prática: os jogadores da categoria Masculino Profissional são obrigados a quando forem sacar, o parceiro do sacador deverá estar a uma distância de 6 metros da rede. Caso contrário, será marcada invasão e o ponto será da dupla adversária.</p> 
         </article>
 
         <article>
-            <div class="imagem"">FOTO</div>
+            <div class="imagem" id="imagem2">
+
+            </div>
+            <aside>Foto: Istock Getty Images</aside>
             <p>
                 Petrolina, cidade de Pernambuco, sediará uma edição do ITF BT400, um dos principais torneios de beach tennis do mundo. Será o primeiro BT400 da história do estado de Pernambuco, no Vale do São Francisco, marcado para os dias 15 a 21 de abril, na EMS Arena.
             </p>
             <p>
                 Diante do ITF BT400, serão realizados, também, as edições do BT50 e o BT10, na mesma semana. Além de um campeonato amador, com jogadores de diversos lugares diferentes.
             </p>
-            <aside>Fonte: https://www.portalzap.com</aside>
+            
         </article>
 
-        <h2>Contato</h2>
-        <div id="contato">
-            <p>Entre em Contato:</p>
-            <a href="https://www.instagram.com/marcosqxy/"><img src="imagens/logo-instagram.jpg" alt="Instagram"></a>
-        </div>
+        <p id="compartilhe">Compartilhe agora</p>
+        <a href="" id="whatsapp-share-btt" rel="nofollow" target="_blank"></a>
     </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var conteudo = encodeURIComponent(document.title + " " + window.location.href);
+        document.getElementById("whatsapp-share-btt").href = "https://api.whatsapp.com/send?text=" + conteudo;
+    }, false);
+    </script>
 </body>
 </html>
