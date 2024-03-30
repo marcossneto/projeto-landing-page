@@ -94,7 +94,7 @@
     main > ol {
         list-style-type: '\2714\00A0\00A0'; 
         margin: auto;   
-        max-width: 400px;
+        width: 380px;
     }
 
     main > ol > li {
